@@ -3,18 +3,18 @@ Code Book - Getting and Cleaning Data Project
 
 ## Executive Summary
 
-This file contains the Project's write-up of the _Getting and Cleaning Data_ course.  The main purpose of this analysis is to generate a tidy data with the averages of a number of variables provided from a training and test data sets. In the next sections there is a brief description of the original data, the transformation of the data and the final results.
+This file contains the  _Getting and Cleaning Data_ project description.  The main purpose of this analysis is to generate a tidy data with the averages of a number of variables provided from a set consisting in separate files for training and test sets of data . The next sections provide a brief description of the Input Data, the transformation of the Input data and the final results.
 
 ## Input Data Description
 
-The data was extracted from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip . This data provides the information about an experiment of human activity recognition using smartphones. All the details about the experiment and data can be found in the site: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones.
+The Input Data was extracted from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip . This data provides the information about an experiment of human activity recognition using smartphones. All the details about the experiment and data can be found in the site: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones.
 
 In summary the input data is divided in a training set and in a training set. There are various components of the data which are in separate files.
 
 
 ## Analysis Introduction
 
-The analysis for this assignment  using the input data set consist in transforming this input set which has been described in the previous section and compute the averages of the variables in the input data. As mentioned in the previous section the input data is divided in two sets: the training and testing sets. At the same time the training and testing sets had couple of variables in different files like the activity carried out for each observation/record is on a different file than the training/testing set itself and the same with the variable that contains the individual/subject who carried out the activity is a different file that the training/testing set file.
+The analysis for this assignment  using the Input data set consists in transforming this data which has been described in the previous section and compute the averages of the variables in this data. As mentioned, the Input Data is divided in two sets: the training and testing sets. At the same time the training and testing sets have various componenets in different files like the activity carried out for each observation/record and the variable that contains the individual/subject who carried out the activity is on a different file.
 
 In order to compute the average of each variable for each activity and each subject, we must put all the variables (activity and individual) together with the training and test sets and put merge the training and testing sets to come up with a single set. 
 
