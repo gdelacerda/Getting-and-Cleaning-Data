@@ -44,24 +44,24 @@ In order to compute the average of each variable for each activity and each subj
   
   This function puts all the previous scripts together, it takes the train data file, test data file, activity files, features file and subject files in the following order: 
   
-  Y_train.txt
-  Y_test.txt
-  features.txt
-  activity_labels.txt
-  y_train.txt
-  y_text.txt
-  subject_train.txt
-  subject_test.txt
+  *Y_train.txt
+  *Y_test.txt
+  *features.txt
+  *activity_labels.txt
+  *y_train.txt
+  *y_text.txt
+  *subject_train.txt
+  *subject_test.txt
   
  This script merged the train and test sets, labels the activities with the corresponding names, reads  the subject train and test files and merge them together to make a single table containing the subjects of the train and test sets. 
  
  The vector of activity names  obtained with  namingActivities.R and the vector of subjects is added to the merged data to come up with a data set that contains all the original columns plus the Activity and Subject columns. With this data set we can filter or subset the data by Activity and Subject so that we can compute the means of all the variables and store these means on a separate data set.
  
-## Output Data - the tidy Data Set with avergae of each variable
+## Output Data - the tidy Data Set with average of each variable
 
-The resulting data set is a set with the same number of columns/ variables (561) as the original train and test sets and an additional column which indicates the subject and the activity: 
+The resulting data set is a set which contains the training and testing sets and contains the same number of columns/ variables (561) as the Input Data with an additional column which indicates the subject and the activity: 
 
-Subject_Activity: Is a variable which indicates the subject who performed the activity and the activity name.
+**Subject_Activity: Is a variable which indicates the subject who performed the activity and the activity name.**
 
 The rest of variables/features already described in the input data set are the averages of the input variable values corresponding to a certain activity and certain subject.
 
